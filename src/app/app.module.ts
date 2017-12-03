@@ -9,6 +9,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImageDisplayComponent } from './product-page/image-display/image-display.component';
 import { InfoDisplayComponent } from './product-page/info-display/info-display.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { InfoDisplayComponent } from './product-page/info-display/info-display.c
     ProductPageComponent,
     FooterComponent,
     ImageDisplayComponent,
-    InfoDisplayComponent
+    InfoDisplayComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
