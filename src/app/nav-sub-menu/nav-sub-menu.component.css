@@ -1,0 +1,15 @@
+.sub-nav {
+  color: grey;
+}
+
+.sub-nav a {
+  text-decoration: none;
+}
+
+.previous-pages {
+  color: inherit;
+}
+
+.current-page {
+  color: black;
+}

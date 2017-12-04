@@ -1,3 +1,4 @@
-<p>
-  nav-sub-menu works!
-</p>
+<span class="sub-nav" *ngFor="let link of breadCrumbs; let i = index">
+  <a href="#" class="previous-pages" *ngIf="i !== breadCrumbs.length - 1">{{link}} ></a>
+  <a href="#" class="current-page" *ngIf="i === breadCrumbs.length - 1">{{link}}</a>
+</span>

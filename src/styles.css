@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.flex-child-50 {
+  width: 50%;
+}
+
 .column {
   flex-direction: column;
 }

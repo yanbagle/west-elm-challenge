@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ImageDisplayComponent } from './product-page/image-display/image-display.component';
 import { InfoDisplayComponent } from './product-page/info-display/info-display.component';
 import { HeaderComponent } from './header/header.component';
+import {ProductService} from './services/product-service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -24,9 +26,12 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

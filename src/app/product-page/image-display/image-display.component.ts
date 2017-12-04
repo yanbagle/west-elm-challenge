@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Product} from '../../models/Product';
 
 @Component({
   selector: 'app-image-display',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageDisplayComponent implements OnInit {
 
+  @Input() productInfo: Product[];
+  public selectedImgId = '0';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public userSelectedImage(product: Product) {
+    this.selectedImgId = product.productId;
   }
 
 }

@@ -1,3 +1,10 @@
-<p>
-  image-display works!
-</p>
+<div class="product-images" *ngIf="productInfo">
+  <div>
+    <img [src]="productInfo[selectedImgId].largeImg" alt="large image">
+  </div>
+  <div class="image-picker">
+    <span *ngFor="let product of productInfo, let i = index">
+      <a href="javascript:void(0)" (click)="userSelectedImage(product)"><img [ngClass]="{'img-border': i == selectedImgId}" [src]="product.smallImg" alt="small image"></a>
+    </span>
+  </div>
+</div>
