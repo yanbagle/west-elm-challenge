@@ -1,10 +1,12 @@
-<div class="product-images" *ngIf="productInfo">
+<div class="product-images" *ngIf="productSubItems">
   <div>
-    <img [src]="productInfo[selectedImgId].largeImg" alt="large image">
+    <img [src]="productSubItems[selectedImgId].largeImg" alt="large image">
   </div>
   <div class="image-picker">
-    <span *ngFor="let product of productInfo, let i = index">
-      <a href="javascript:void(0)" (click)="userSelectedImage(product)"><img [ngClass]="{'img-border': i == selectedImgId}" [src]="product.smallImg" alt="small image"></a>
+    <span *ngFor="let subItem of productSubItems, let i = index">
+      <a href="javascript:void(0)" (click)="userSelectedImage(subItem)">
+        <img [ngClass]="{'img-border': i == selectedImgId}" [src]="subItem.smallImg" alt="small image">
+      </a>
     </span>
   </div>
 </div>

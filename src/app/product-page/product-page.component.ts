@@ -11,7 +11,7 @@ import {Product} from '../models/Product';
 // container comp holding the image and info display
 export class ProductPageComponent implements OnInit {
 
-  public productInfo: Product[];
+  public productInfo: Product;
 
   constructor(private productService: ProductService) { }
 

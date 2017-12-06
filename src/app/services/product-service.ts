@@ -11,30 +11,47 @@ export class ProductService {
   }
 
   // mocking our products info, returns an array of Products
-  public getProductInfo(id: string): Observable<Product[]> {
+  public getProductInfo(id: string): Observable<Product> {
     return Observable.of(
-      [
-        {
-          productId: '0',
-          smallImg: '../../assets/images/product-small-a.jpg',
-          largeImg: '../../assets/images/product-large-a.jpg',
-        },
-        {
-          productId: '1',
-          smallImg: '../../assets/images/product-small-b.jpg',
-          largeImg: '../../assets/images/product-large-b.jpg',
-        },
-        {
-          productId: '2',
-          smallImg: '../../assets/images/product-small-c.jpg',
-          largeImg: '../../assets/images/product-large-c.jpg',
-        },
-        {
-          productId: '3',
-          smallImg: '../../assets/images/product-small-d.jpg',
-          largeImg: '../../assets/images/product-large-d.jpg',
-        },
-      ]
+      {
+        subItems: [
+          {
+            productId: '0',
+            descTitle: 'French Blue',
+            smallImg: '../../assets/images/product-small-a.jpg',
+            largeImg: '../../assets/images/product-large-a.jpg',
+          },
+          {
+            productId: '1',
+            descTitle: 'Black',
+            smallImg: '../../assets/images/product-small-b.jpg',
+            largeImg: '../../assets/images/product-large-b.jpg',
+          },
+          {
+            productId: '2',
+            descTitle: 'Green',
+            smallImg: '../../assets/images/product-small-c.jpg',
+            largeImg: '../../assets/images/product-large-c.jpg',
+          },
+          {
+            productId: '3',
+            descTitle: 'Pink',
+            smallImg: '../../assets/images/product-small-d.jpg',
+            largeImg: '../../assets/images/product-large-d.jpg',
+          }
+        ],
+        desc: `A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. 
+        Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, 
+        emboilered in your choice of color. An apron of this quality makes a welcome gift for any cook.` ,
+        descList: [
+          'Durable 100% cotton construction',
+          'Adjustable neckband ensures a good fit',
+          'Roomy front pockets hold small tools',
+          'Machine-wash'
+        ],
+        price: 19.55,
+        name: 'Williams-Sonoma Classic Apron'
+      }
     );
   }
 
