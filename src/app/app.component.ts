@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
+  public userSelectedImage;
+
+  public setImage(item) {
+    this.userSelectedImage = item.descTitle;
+  }
 }

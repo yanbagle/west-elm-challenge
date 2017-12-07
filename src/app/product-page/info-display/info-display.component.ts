@@ -9,6 +9,7 @@ import {Product} from '../../models/Product';
 export class InfoDisplayComponent implements OnInit {
 
   @Input() productInfo: Product;
+  @Input() userSelectedImage: string;
   public addToCart = false;
   public expand = [true, false, false];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ProductService} from '../services/product-service';
 import {Product} from '../models/Product';
 
@@ -11,7 +11,9 @@ import {Product} from '../models/Product';
 // container comp holding the image and info display
 export class ProductPageComponent implements OnInit {
 
+  @Output() imageSelect: EventEmitter<any> = new EventEmitter();
   public productInfo: Product;
+  public userSelectedImage: string;
 
   constructor(private productService: ProductService) { }
 
@@ -20,6 +22,11 @@ export class ProductPageComponent implements OnInit {
     this.productService.getProductInfo('someId').subscribe(res => {
       this.productInfo = res;
     });
+  }
+
+  public emitSelectProduct(item) {
+    this.imageSelect.emit(item);
+    this.userSelectedImage = item.descTitle;
   }
 
 }

@@ -29,13 +29,13 @@ export class ProductService {
           },
           {
             productId: '2',
-            descTitle: 'Green',
+            descTitle: 'Sage Green',
             smallImg: '../../assets/images/product-small-c.jpg',
             largeImg: '../../assets/images/product-large-c.jpg',
           },
           {
             productId: '3',
-            descTitle: 'Pink',
+            descTitle: 'Claret Red',
             smallImg: '../../assets/images/product-small-d.jpg',
             largeImg: '../../assets/images/product-large-d.jpg',
           }

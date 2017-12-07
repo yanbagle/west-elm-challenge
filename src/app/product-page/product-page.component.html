@@ -2,11 +2,13 @@
   <div class="flex-child-50">
     <app-image-display
       [productInfo]="productInfo"
+      (imageSelect)="emitSelectProduct($event)"
     ></app-image-display>
   </div>
   <div class="flex-child-50">
     <app-info-display
       [productInfo]="productInfo"
+      [userSelectedImage]="userSelectedImage"
     >
     </app-info-display>
   </div>
