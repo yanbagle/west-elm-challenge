@@ -21,12 +21,22 @@
     </div>
   </div>
 
-  <input id="toggle" type="checkbox" checked>
-  <label for="toggle">Hidden Kitten</label>
-  <div id="expand">
-    <section>
-      <p>mew</p>
-    </section>
+  <hr>
+
+  <div *ngFor="let expanded of expand; let i = index">
+    <span>
+      <img *ngIf="!expanded" src="../../assets/images/arrow-collapsed.png" (click)="expandSection(i)">
+      <img *ngIf="expanded" src="../../assets/images/arrow-expanded.png" (click)="expandSection(i)">
+      <label *ngIf="expanded">EXPANDED</label>
+      <label *ngIf="!expanded">COLLAPSED</label>
+    </span>
+    <div class="expand-section" [ngClass]="{'expanded': expanded}">
+      <section>
+        <p class="product-desc">This section is extended. This section can be collapsed by clicking on the "Expanded" text.
+          This section is extended. This section can be collapsed by clicking on the "Expanded" text.</p>
+      </section>
+    </div>
+    <hr>
   </div>
 
 </div>

@@ -10,6 +10,7 @@ export class InfoDisplayComponent implements OnInit {
 
   @Input() productInfo: Product;
   public addToCart = false;
+  public expand = [true, false, false];
 
   constructor() { }
 
@@ -21,6 +22,10 @@ export class InfoDisplayComponent implements OnInit {
     setTimeout(() => {
       this.addToCart = false;
     }, 1500);
+  }
+
+  public expandSection(index) {
+    this.expand[index] = !this.expand[index];
   }
 
 }

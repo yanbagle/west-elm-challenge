@@ -1,17 +1,16 @@
 
-#expand {
-  height: 0px;
+.expand-section {
+  height: 0;
   overflow: hidden;
   transition: height 0.5s;
-  background: url(http://placekitten.com/g/600/300);
-  color: #FFF;
 }
+
 section {
   padding: 0 20px;
+  color: black;
 }
-#toggle:checked ~ #expand {
-  height: 250px;
+
+.expanded {
+  height: 7em;
 }
-#toggle:checked ~ label::before {
-  content: "-";
-}
+
