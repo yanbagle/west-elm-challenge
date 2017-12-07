@@ -9,10 +9,18 @@ import {Product} from '../../models/Product';
 export class InfoDisplayComponent implements OnInit {
 
   @Input() productInfo: Product;
+  public addToCart = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public addItemToCart() {
+    this.addToCart = true;
+    setTimeout(() => {
+      this.addToCart = false;
+    }, 1500);
   }
 
 }

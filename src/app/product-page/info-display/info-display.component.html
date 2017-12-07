@@ -12,4 +12,21 @@
     {{productInfo.price | currency }}
   </h2>
   <input class="quantity-input" type="number" value="1" min="1" max="50"/>
+  <div>
+      <input type="image" src="../../../assets/images/button-add-to-cart.png" (click)="addItemToCart()" />
+  </div>
+  <div *ngIf="addToCart" id="myModal" class="modal">
+    <div class="modal-content">
+      Item added to cart!
+    </div>
+  </div>
+
+  <input id="toggle" type="checkbox" checked>
+  <label for="toggle">Hidden Kitten</label>
+  <div id="expand">
+    <section>
+      <p>mew</p>
+    </section>
+  </div>
+
 </div>
