@@ -1,0 +1,25 @@
+.product-info {
+  margin: 2em 0;
+  width: 88%;
+}
+.product-name {
+  margin: 0.8em 0;
+  font-size: x-large;
+}
+.product-desc {
+  font-size: 120%;
+}
+
+.bullet-point {
+  margin: 0.5em 0 0.5em 1em;
+}
+
+.quantity-input {
+  text-align: center;
+  width: 10%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
