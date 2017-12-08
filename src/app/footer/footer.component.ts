@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public links = ['Privacy Policy', 'Legal Statement' ];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,13 +1,5 @@
 <ul class="nav">
-  <li><a href="#">COOKWARE</a></li>
-  <li><a href="#">COOKS' TOOLS</a></li>
-  <li><a href="#">CUTLEY</a></li>
-  <li><a href="#">ELETRICS</a></li>
-  <li><a href="#">BAKEWARE</a></li>
-  <li><a href="#">FOOD</a></li>
-  <li><a href="#">TABLETOP & BAR</a></li>
-  <li><a href="#">HOMEKEEPING</a></li>
-  <li><a href="#">OUTDOOR</a></li>
-  <li><a href="#">SALE</a></li>
-  <li><a href="#">WILLIAM-SONOMA HOME</a></li>
+  <li *ngFor="let navItem of menuList">
+    <a href="#" [ngClass]="{'current-tab': navItem === currentTab}">{{navItem}}</a>
+  </li>
 </ul>

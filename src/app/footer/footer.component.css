@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgrey;
+  color: dimgray;
+  text-align: center;
+  height:3em;
+  margin-bottom: -1em;
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.footer-content {
+  display: inline-block;
+  margin-top: 1em;
+}

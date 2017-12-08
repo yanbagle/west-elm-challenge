@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavMenuComponent implements OnInit {
 
+  public menuList = [ 'COOKWARE', 'COOKS\' TOOLS', 'CUTLEY', 'ELETRICS', 'BAKEWARE', 'FOOD', 'TABLETOP & BAR', 'HOMEKEEPING',
+    'OUTDOOR', 'SALE', 'WILLIAM-SONOMA HOME' ];
+  public currentTab = 'WILLIAM-SONOMA HOME';
+
   constructor() { }
 
   ngOnInit() {

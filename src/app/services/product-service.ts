@@ -18,26 +18,26 @@ export class ProductService {
           {
             productId: '0',
             descTitle: 'French Blue',
-            smallImg: '../../assets/images/product-small-a.jpg',
-            largeImg: '../../assets/images/product-large-a.jpg',
+            smallImg: 'assets/images/product-small-a.jpg',
+            largeImg: 'assets/images/product-large-a.jpg',
           },
           {
             productId: '1',
             descTitle: 'Black',
-            smallImg: '../../assets/images/product-small-b.jpg',
-            largeImg: '../../assets/images/product-large-b.jpg',
+            smallImg: 'assets/images/product-small-b.jpg',
+            largeImg: 'assets/images/product-large-b.jpg',
           },
           {
             productId: '2',
             descTitle: 'Sage Green',
-            smallImg: '../../assets/images/product-small-c.jpg',
-            largeImg: '../../assets/images/product-large-c.jpg',
+            smallImg: 'assets/images/product-small-c.jpg',
+            largeImg: 'assets/images/product-large-c.jpg',
           },
           {
             productId: '3',
             descTitle: 'Claret Red',
-            smallImg: '../../assets/images/product-small-d.jpg',
-            largeImg: '../../assets/images/product-large-d.jpg',
+            smallImg: 'assets/images/product-small-d.jpg',
+            largeImg: 'assets/images/product-large-d.jpg',
           }
         ],
         desc: `A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. 
