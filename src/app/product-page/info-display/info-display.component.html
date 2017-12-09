@@ -1,13 +1,13 @@
-<div class="product-info" *ngIf="productInfo">
-  <div class="product-name">
+<article class="product-info" *ngIf="productInfo">
+  <header class="product-name">
     {{productInfo.name}}, {{userSelectedImage}}
-  </div>
-  <div class="product-desc">
+  </header>
+  <article class="product-desc">
     {{productInfo.desc}}
-  </div>
-  <div class="product-desc bullet-point" *ngFor="let bulletPoint of productInfo.descList">
+  </article>
+  <article class="product-desc bullet-point" *ngFor="let bulletPoint of productInfo.descList">
     &#8226; {{bulletPoint}}
-  </div>
+  </article>
   <h2>
     {{productInfo.price | currency }}
   </h2>
@@ -23,7 +23,7 @@
 
   <hr>
 
-  <div *ngFor="let expanded of expand; let i = index">
+  <article *ngFor="let expanded of expand; let i = index">
     <span>
       <img *ngIf="!expanded" src="assets/images/arrow-collapsed.png" (click)="expandSection(i)">
       <img *ngIf="expanded" src="assets/images/arrow-expanded.png" (click)="expandSection(i)">
@@ -37,6 +37,6 @@
       </section>
     </div>
     <hr>
-  </div>
+  </article>
 
-</div>
+</article>
