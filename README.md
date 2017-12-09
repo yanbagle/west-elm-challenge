@@ -1,29 +1,20 @@
 # WestElmChallenge
 
-https://yanzhang000.github.io/west-elm-challenge/
+Hi there! The application is deployed at https://yanzhang000.github.io/west-elm-challenge/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+Written in Angular2+
 
-## Development server
+To download and run the app locally: 
+1. Download/clone the project
+2. Cd into the project folder where the package.json is
+3. npm install
+4. npm start
+5. In Chrome, go to http://localhost:4200/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Every time the application starts, a service call is fired retrieving mocked data for the product's images and info.
+The application is in a component based structure (e.g. the header, footer, product images and info, etc is in its own component).
+I think this way would enable adding new features and pages much simpler in the future as every new page would be a new component.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
