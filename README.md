@@ -14,6 +14,8 @@ To download and run the app locally:
 Every time the application starts, a service call is fired retrieving mocked data for the product's images and info.
 The application is in a component based structure (e.g. the header, footer, product images and info, etc is in its own component).
 I think this way would enable adding new features and pages much simpler in the future as every new page would be a new component.
+I also implemented a smart/presentation component architecture as presentation components are always wrapped inside of smart components.
+The presentation components are responsible for mainly one thing and that is display data. The smart components handles things like biz logic and making service calls.
 
 
 
